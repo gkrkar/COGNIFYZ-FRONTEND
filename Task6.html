@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Styling and Validation</title>
+    <link rel="stylesheet" href="Task6.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Form</h1>
+      <p>Fill out the form below to get in touch with us</p>
+
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required />
+          <span class="error-message" id="fullNameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+          <span class="error-message" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+          <span class="error-message" id="phoneError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="100"
+            required
+          />
+          <span class="error-message" id="ageError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="">Select a subject</option>
+            <option value="general">General Inquiry</option>
+            <option value="support">Technical Support</option>
+            <option value="sales">Sales</option>
+            <option value="feedback">Feedback</option>
+          </select>
+          <span class="error-message" id="subjectError"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="error-message" id="messageError"></span>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="newsletter" name="newsletter" />
+          <label for="newsletter">Subscribe to newsletter</label>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="terms" name="terms" required />
+          <label for="terms">I agree to the terms and conditions</label>
+          <span class="error-message" id="termsError"></span>
+        </div>
+
+        <button type="submit" id="submitBtn">Send Message</button>
+      </form>
+
+      <div class="success-message" id="successMessage">
+        <h2>✅ Form Submitted Successfully!</h2>
+        <p>Thank you for your message. We'll get back to you soon.</p>
+      </div>
+    </div>
+
+    <script src="Task6.js"></script>
+  </body>
+</html>
