@@ -1,6 +1,6 @@
 # 🎯 Front-end Development Internship Tasks – Cognifyz Technologies
 
-This repository contains all the completed tasks during my internship at **Cognifyz Technologies** under the role of **Front-end Development Intern** (14 June 2025 – 14 July 2025).
+This repository contains all the completed tasks during my internship at **Cognifyz Technologies** under the role of **Front-end Development Intern** 
 
 ---
 
